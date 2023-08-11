@@ -5,6 +5,11 @@ function isPalindrome(word) {
 /* 
   Add your pseudocode here
 */
+// 1. Given array of words / Skip if convert to arrary in function
+// 2. Iterate over each words in input array:
+// if string reverse = input word
+// return isPalindrome true
+// else false
 
 /*
   Add written explanation of your solution here
@@ -16,10 +21,32 @@ if (require.main === module) {
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
-  console.log("");
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("mom"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("level"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("kayak"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("civic"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("noon"));
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("scream"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("taco cat"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("UFO tofu"));
 }
 
 module.exports = isPalindrome;
